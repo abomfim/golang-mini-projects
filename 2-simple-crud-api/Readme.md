@@ -34,7 +34,15 @@ GET /book/show?id={uuid}
 
 #### Update Book
 ```
-UPDATE /book/update?id={uuid} 
+PUT /book/update?id={uuid} 
+{
+	"isbn":"382938",
+	"title": "My Beautiful Book",
+	"author": {
+		"firstName": "John",
+		"lastName": "Black"
+	}
+}
 ```
 
 #### Delete Book

@@ -24,7 +24,7 @@ POST /book
 
 #### Get Books
 ```
-GET /book 
+GET /books
 ```
 
 #### Get Book
@@ -34,7 +34,15 @@ GET /book/{id}
 
 #### Update Book
 ```
-UPDATE /book/{id} 
+PUT /book/{id} 
+{
+	"isbn":"382938",
+	"title": "My Beautiful Book",
+	"author": {
+		"firstName": "John",
+		"lastName": "Black"
+	}
+}
 ```
 
 #### Delete Book
